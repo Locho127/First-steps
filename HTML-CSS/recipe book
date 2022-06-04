@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spin-off of "Project: Recipe book"</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+            background-color:rgb(220,235,220);
+        }
+        #ppork {
+            width:250px;
+            float:right;
+            padding-right:20px;
+            padding-top:35px;
+        }
+        #porkimg {
+            float:right;
+            width:250px;
+            padding-right:20px;
+            padding-top:35px;
+        }
+        #palacinka {
+            float:right;
+            width:250px;
+            padding-right:20px;
+            padding-top:35px;
+        }
+        h1 {
+            text-align:center;
+            padding:45px;
+            border:solid;
+            border-radius:90px;
+            background:linear-gradient(45deg, blue, green);
+        }
+         </style>
+    </head>
+    <body>
+       
+        <h1>Locho's Recipe Book</h1>
+        
+        <h2 id="contents">Contents:</h2>
+        
+        <ol>
+            <li><a href="#bcpancakes">Banana-coconut pancakes</a></li>
+            <li><a href="#stewed-pork">Stewed pork on mustard</a></li>
+            <li><a href="#pulledpork">Pulled pork</a></li>
+        </ol>
+        
+        <h2 id="bcpancakes">Banana-coconut pancakes</h2>
+        <img id="palacinka" src="https://upload.wikimedia.org/wikipedia/commons/0/09/BlueberryPancakes.jpg" alt="pancakes_with_berries">
+        
+        <ul>
+            <li>Time: 5min</li>
+            <li>Serves: 2</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>banana</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>eggs</td>
+            <td>2</td>
+            </tr>
+            <tr>
+            <td>grated coconut</td>
+            <td>3tbsp</td>
+            </tr>
+            <tr>
+            <td>dark chocolate</td>
+            <td>60g</td>
+            </tr>
+            <tr>
+            <td>berry mix</td>
+            <td>2tbsp</td>
+            </tr>
+            <tr>
+            <td>curd</td>
+            <td>150g</td>
+            </tr>
+            <tr>
+            <td>sugar</td>
+            <td>1tsp</td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Put pan on medium heat
+</p>
+       <p><strong>Step 2:</strong> Put banana,eggs and coconut to mixer and mix them </p>
+       <p><strong>Step 3:</strong> From the mass in mixer u can do small pancakes on pan. wait until they are firm enough so you can turn them and when they are done put them on plate</p>
+       <p><strong>Step 4:</strong> mix crud with sugar, make some chocolate shavings</p>
+       <p><strong>Step 5:</strong> finaly we can finish it so put first pancake on plate and spread crud on it. Do the same on 3stages and then put a berry mix on top along chocolate shavings. <strong>Good Apetite</strong>! </p>
+        
+    <p><em>Source: <a href="https://varimepaleo.sk/bananovo-kokosove-palacinky/">website where i get this recipe</a></em></p>
+    
+       <p><a href="#contents">Back to contents</a></p>
+    
+    <h2 id="stewed-pork">Stewed pork on mustard</h2>
+    <img id="porkimg" src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Red_braised_pork_belly.jpg" alt="stewed_pork_in_pot">
+    
+    <ul>
+            <li>Time: 70min</li>
+            <li>Serves: 4</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>pork thig</td>
+            <td>500g</td>
+            </tr>
+            <tr>
+            <td>mustard</td>
+            <td>4tbsp</td>
+            </tr>
+            <tr>
+            <td>water</td>
+            <td>400ml</td>
+            </tr>
+            <tr>
+            <td>whole new spice</td>
+            <td>2pcs</td>
+            </tr>
+            <tr>
+            <td>semi-rough flour</td>
+            <td>2tbsp</td>
+            </tr>
+            <tr>
+            <td>salt</td>
+            <td>0.5tsp</td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Slice pork thig on 4 same slices. Then knock the slices with knocker and salt them down.
+</p>
+       <p><strong>Step 2:</strong> Put slices on heated pan and make them from booth sides. And prepare mustard and almost all water with new spice to pot and preheat it.</p>
+       <p><strong>Step 3:</strong>Put slices to pot and stew it for approximately 1 hour</p>
+       <p><strong>Step 4:</strong>Take meat out of stew and 
+strain rest of stew. After this u can mix flour with rest of water and pour it in stew and cook it for a while. Its done <strong>Good Apetite</strong>!</p>
+
+<p><em>Source:My girlfriend's head</em></p>
+
+      <p><a href="#contents">Back to contents</a></p>
+
+     <h2 id="pulledpork">Pulled pork</h2>
+     <img id="ppork" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Pile_of_Pulled_Pork.jpg" alt="pulled_pork_img">
+     <ul>
+            <li>Time: 360min</li>
+            <li>Serves: 6</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>pork shouder</td>
+            <td>1,5kg</td>
+            </tr>
+            <tr>
+            <td>salt</td>
+            <td>3tbsp</td>
+            </tr>
+            <tr>
+            <td>cane sugar</td>
+            <td>3tbsp</td>
+            </tr>
+            <tr>
+            <td>apple jiuce</td>
+            <td>3dl</td>
+            </tr>
+            <tr>
+            <td>bbq sauce</td>
+            <td>200ml</td>
+            </tr>
+            <tr>
+            <td>smoked red peper</td>
+            <td>0.5tsp</td>
+            </tr>
+            <tr>
+            <td>black peper</td>
+            <td>0.5tsp</td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Get rid of surplus fat on pork shouder and rub it with cane sugar and salt. put in fridge and wait at least 12hrs.
+</p>
+        <p><strong>Step 2:</strong> Scrub/wash down a shell made of salt and cane shugar with apple jiuce and rub other spices on it. After that put a pork in to Jena glass bowl with pot lid. Put bowl to preheated oven to 150 degrees Celsius.
+</p>
+       <p><strong>Step 3:</strong> Bake it for 5 hours then check it out and if its enough delicate that u can tear it with fork. Then u can tear it whole and u can medly it with bbq sauce. Its done <strong>Good Apetite</strong>!</p>
+       
+       <p><em>Source:My memories. Dont know where i found this recipe. If i remeber it will uptade it later.</em></p>
+     
+     
+    <p><a href="#contents">Back to contents</a></p>
+    </body>
+</html>
