@@ -1,0 +1,251 @@
+//small animation with day and night cycle
+var mx = 0;//moon x                           
+var my = 30;//moon y
+var dom1x = 10;//house1x
+var dom1y = 210;//house1y
+var h2x = 240;//house2x
+var h2y = 270;//house2y
+var oknox = 20;//windowx
+var oknoy = 20;//windowy
+var carx = -60;
+var carx2 = -60;
+var night = (mx < 400);
+var notnight = (mx > 410);
+var star = getImage("cute/Star");
+var x = 0;
+var y = 0;
+var starsiz = 20;
+var a = 320;
+var sx =-10;//sun x
+var sy = -10;//sun y
+var starx = 410;
+var stary = -10;
+var starsize = 10;
+
+draw = function() {
+    background(29, 40, 115);
+    
+    
+    //star img falling
+    image(star,x,y,starsiz,starsiz+10);
+    x += cos(a)*1;
+    y += sin(a)*3;
+    a += 0.5;
+    if(y > 400){
+    x = -25;
+    y = random(0,-30);
+    a = 320;}
+    
+    fill(240, 166, 29);
+    noStroke();
+    ellipse(starx+45,stary-22.5,starsize-45,starsize-45);
+    ellipse(starx+40,stary-20,starsize-40,starsize-40);
+    ellipse(starx+35,stary-17.5,starsize-35,starsize-35);
+    ellipse(starx+30,stary-15,starsize-30,starsize-30);
+    ellipse(starx+25,stary-12.5,starsize-25,starsize-25);
+    ellipse(starx+20,stary-10,starsize-20,starsize-20);
+    ellipse(starx+15,stary-7.5,starsize-15,starsize-15);
+    ellipse(starx+10,stary-5,starsize-10,starsize-10);
+    ellipse(starx+5,stary-2.5,starsize-5,starsize-5);
+    ellipse(starx,stary,starsize,starsize);
+    fill(255, 0, 0);
+    ellipse(starx+3,stary+3,starsize-17,starsize-17);
+    starsize = starsize+0.02;
+    starx = starx-1;
+    stary = stary+0.5;
+    stroke(0, 0, 0);
+    if(starx < -5){
+        starx = random(410,550);
+        stary = random(-90,150);
+        starsize = 15;
+    }
+    
+    //stars
+    fill(235, 235, 235);
+    ellipse(10,22,5,5);
+    ellipse(35,28,5,5);
+    ellipse(390,150,5,5);
+    ellipse(85,28,5,5);
+    ellipse(25,83,5,5);
+    ellipse(15,99,5,5);
+    ellipse(85,28,5,5);
+    ellipse(96,66,5,5);
+    ellipse(385,222,5,5);
+    ellipse(350,25,5,5);
+    ellipse(166,112,5,5);
+    ellipse(333,240,5,5);
+    ellipse(300,150,5,5);
+    ellipse(53,294,5,5);
+    ellipse(280,55,5,5);
+    ellipse(255,99,5,5);
+    ellipse(185,38,5,5);
+    ellipse(126,107,5,5);
+    ellipse(177,149,5,5);
+    ellipse(200,350,5,5);
+    ellipse(185,324,5,5);
+    ellipse(275,285,5,5);
+    ellipse(182,141,5,5);
+    ellipse(215,231,5,5);
+    ellipse(220,16,5,5);
+    ellipse(219,169,5,5);
+    ellipse(154,18,5,5);
+    ellipse(108,169,5,5);
+    ellipse(55,124,5,5);
+    ellipse(137,235,5,5);
+    ellipse(175,196,5,5);
+    ellipse(38,181,5,5);
+    ellipse(277,190,5,5);
+    
+    fill(156, 153, 153);
+    ellipse(random(0,400),random(0,400),5,5);
+    
+    
+    //morning
+    if (mx > 400){
+        background(139, 174, 196);
+    }
+    
+    //sun
+    if (mx > 410) {
+        fill(237, 226, 26);
+        ellipse(mx-420,my-40,60,60);
+    }
+    //night again
+    if (mx > 830) {
+        mx =-10;
+        my =30;
+    }
+    
+    //mountain1
+    fill(64, 79, 125);
+    if (mx > 400){
+        fill(20, 79, 17);
+    }
+    beginShape();
+    vertex(0,400);
+    vertex(0,200);
+    vertex(150,182);
+    vertex(300,250);
+    vertex(400,200);
+    vertex(400,400);
+    vertex(0,400);
+    endShape();
+    
+    //mountain2
+    fill(50, 56, 74);
+    if (mx > 400){
+        fill(68, 125, 65);
+    }
+    beginShape();
+    vertex(0,250);
+    vertex(55,380);
+    vertex(120,210);
+    vertex(180,291);
+    vertex(260,263);
+    vertex(274,230);
+    vertex(300,261);
+    vertex(320,220);
+    vertex(400,255);
+    vertex(400,380);
+    vertex(0,380);
+    endShape();
+    
+    //road
+    fill(61, 61, 61);
+    if (mx > 400){
+        fill(107, 107, 103);
+    }
+    rect(0,360,400,40);
+    
+    //house1
+    fill(59, 44, 44);
+    if (mx > 400){
+        fill(131, 133, 108);
+    }
+    rect(dom1x,dom1y,100,150);
+    fill(255, 242, 0);
+    if (mx > 400){
+        fill(117, 118, 201);
+    }
+    rect(dom1x+10,dom1y+10,oknox,oknoy);
+    rect(dom1x+40,dom1y+10,oknox,oknoy);
+    rect(dom1x+70,dom1y+40,oknox,oknoy);
+    rect(dom1x+70,dom1y+70,oknox,oknoy);
+    rect(dom1x+10,dom1y+70,oknox,oknoy);
+    rect(dom1x+10,dom1y+10,oknox,oknoy);
+    rect(dom1x+70,dom1y+100,oknox,oknoy);
+    rect(dom1x+10,dom1y+100,oknox,oknoy);
+    rect(dom1x+36.5,dom1y+110,oknox+5,oknoy+20);
+    fill(94, 90, 34);
+    if (mx > 400){
+        fill(117, 118, 201);
+    }
+    rect(dom1x+40,dom1y+70,oknox,oknoy);
+    rect(dom1x+40,dom1y+40,oknox,oknoy);
+    rect(dom1x+10,dom1y+40,oknox,oknoy);
+    rect(dom1x+70,dom1y+10,oknox,oknoy);
+    
+    //house2
+    fill(59, 44, 44);
+    if (mx > 400){
+        fill(131, 133, 108);
+    }
+    rect(h2x,h2y,150,90);
+    fill(255, 242, 0);
+    if (mx > 400){
+        fill(117, 118, 201);
+    }
+    rect(h2x+15,h2y+10,oknox,oknoy);
+    rect(h2x+15,h2y+37.5,oknox,oknoy);
+    rect(h2x+115,h2y+10,oknox,oknoy);
+    rect(h2x+85,h2y+10,oknox,oknoy);
+    fill(94, 90, 34);
+    if (mx > 400){
+        fill(117, 118, 201);
+    }
+    rect(h2x+45,h2y+10,oknox,oknoy);
+    rect(h2x+45,h2y+37.5,oknox,oknoy);
+    rect(h2x+15,h2y+65,oknox,oknoy);
+    rect(h2x+45,h2y+65,oknox,oknoy);
+    rect(h2x+85,h2y+65,oknox,oknoy);
+    rect(h2x+85,h2y+37.5,oknox,oknoy);
+    rect(h2x+115,h2y+50,oknox+5,oknoy+20);
+    
+    //moon
+    fill(178, 181, 152);
+    ellipse(mx, my, 40, 40);
+
+    //car
+    
+    fill(48, 68, 120);
+    beginShape();
+    vertex(carx,390);
+    vertex(carx,375);
+    vertex(carx+10,375);
+    vertex(carx+15,365);
+    vertex(carx+35,365);
+    vertex(carx+40,375);
+    vertex(carx+60,375);
+    vertex(carx+60,390);
+    vertex(carx,390);
+    endShape();
+    fill(0, 0, 0);
+    ellipse(carx+12.5,390,10,10);
+    ellipse(carx+47.5,390,10,10);
+    fill(255, 251, 0);
+    arc(carx+60,375,10,10,90,180);
+    fill(181, 4, 4);
+    arc(carx,375,10,10,0,90);
+    fill(72, 103, 156);
+    quad(carx+12,375,carx+17,367,carx+33,367,carx+38,375);
+    
+    
+    
+    //car going again
+    if (carx > 400){
+        carx=-50;
+    }
+    mx=mx+0.05;
+    my=my+0.01;
+    carx=carx+0.7;
+};
