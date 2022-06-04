@@ -1,0 +1,26 @@
+CREATE TABLE zelenina (id INTEGER PRIMARY KEY, meno TEXT, mnozstvo INTEGER, cena_v_E INTEGER, vaha_v_kg INTEGER, sekcia TEXT);
+
+INSERT INTO zelenina VALUES (1, "zemiaky", 17, 3.5, 5, "pult pri vchode");
+INSERT INTO zelenina VALUES (2, "brokolica", 9, 1.8, 5, "pult pri chladnicke");
+INSERT INTO zelenina VALUES (3, "petrzlen", 21, 2, 1, "pult pri vchode");
+INSERT INTO zelenina VALUES (4, "mrkva", 14, 2, 1, "pult pri vchode");
+INSERT INTO zelenina VALUES (5, "paprika", 55, 0.2, 0.2, "pult pri chladnicke");
+INSERT INTO zelenina VALUES (6, "zeler", 5, 1.3, 0.3, "pult pri vchode");
+INSERT INTO zelenina VALUES (7, "hrasok mrazeny", 5, 1.6, 0.5, "mraznicka");
+INSERT INTO zelenina VALUES (8, "tekvica", 4, 3.5, 2.5, "pult pri vchode");
+INSERT INTO zelenina VALUES (9, "redkovka", 8, 1.5, 0.5, "pult pri chladnicke");
+INSERT INTO zelenina VALUES (10, "pastrnak", 2, 2, 0.5, "pult pri vchode");
+INSERT INTO zelenina VALUES (11, "sladke zemiaky", 4, 6.2, 5, "pult pri vchode");
+INSERT INTO zelenina VALUES (12, "paradajky", 15, 1.4, 0.5, "pult pri chladnicke");
+INSERT INTO zelenina VALUES (13, "zem", 17, 3.5, 5, "pult pri vchode");
+INSERT INTO zelenina VALUES (14, "mraz broko", 17, 3.5, 5, "mraznicka");
+INSERT INTO zelenina VALUES (15, "katastrofa", 20, 3.5, 5, "chladnicka");
+
+CREATE TABLE ine (id INTEGER PRIMARY KEY, meno TEXT, mnozstvo INTEGER, cena_v_E INTEGER, vaha_v_kg INTEGER);
+INSERT INTO ine VALUES (1, "1", 1, 1, 1);
+INSERT INTO ine VALUES (2, "2", 1, 1, 2);
+
+SELECT * FROM ine;
+SELECT * FROM zelenina ORDER BY cena_v_E;
+SELECT meno FROM ine;
+SELECT SUM (cena_v_E) FROM zelenina;
